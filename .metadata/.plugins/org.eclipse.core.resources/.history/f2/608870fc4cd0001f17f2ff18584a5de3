@@ -1,0 +1,7 @@
+package com.in28Mins.springboot.lean_jpa_and_hibernate.course.springdatajpa;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CourseSpringDataJpaRepository extends JpaRepository<T, ID>{
+
+}

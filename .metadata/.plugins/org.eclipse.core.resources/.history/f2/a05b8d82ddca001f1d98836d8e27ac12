@@ -1,0 +1,11 @@
+package com.one.learn_spring;
+
+public class App02HelloWorldSpring {
+
+	public static void main(String[] args) {
+		//Launch a Spring context
+		//Configure things we want Spring to manage for us
+		
+	}
+
+}

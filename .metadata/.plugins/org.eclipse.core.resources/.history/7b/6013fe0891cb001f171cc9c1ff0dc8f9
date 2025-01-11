@@ -1,0 +1,13 @@
+package com.one.learn_spring;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class GamingConfiguration {
+	
+	@Bean
+	public GamingConsole game() {
+		var game = PacmanGame();
+	}
+	
+}

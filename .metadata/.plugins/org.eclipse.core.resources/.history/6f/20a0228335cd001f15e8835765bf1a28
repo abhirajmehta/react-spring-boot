@@ -1,0 +1,12 @@
+package com.one.learn_spring.examples.c1;
+
+@Configuration
+@ComponentScan
+public class RealWorldSpringContextLaunchApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

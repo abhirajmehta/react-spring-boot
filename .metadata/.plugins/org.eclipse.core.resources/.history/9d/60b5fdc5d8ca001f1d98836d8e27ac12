@@ -1,0 +1,16 @@
+package com.one.learn_spring;
+
+import com.one.learn_spring.game.GameRunner;
+
+public class AppGamingBasicJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		var marioGame = new MarioGame();
+		var gameRunner = new GameRunner(marioGame);
+		gameRunner.run();
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.one.learn_spring.examples.c1;
+
+public class MongoDbDataService implements DataService{
+
+	@Override
+	public int[] retriveData() {
+		// TODO Auto-generated method stub
+		return new int[] {1, 2, 3, 4, 5};;
+	}
+	
+}

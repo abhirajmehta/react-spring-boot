@@ -1,0 +1,32 @@
+package com.one.learn_spring.examples.h1;
+
+import java.util.Arrays;
+
+import org.springframework.beans.BeansException;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration //---------------------------------------------> Indicates that Java XML is being used
+@ComponentScan
+public class XMLConfigurationContextLauncherApplication{
+	
+//	@Bean
+//	public GameRunner gameRunner(GamingConsole game) {
+//		var gameRunner = new GameRunner(game);
+//		return gameRunner;
+//	}
+
+	public static void main(String[] args) {
+		
+		
+		//The AnnotationConfigApplicationContext is used to launch a Java configuration file
+		try (var context = new AnnotationConfigApplicationContext(XMLConfigurationContextLauncherApplication.class)) {
+			Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+		}
+
+	}
+
+}

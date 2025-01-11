@@ -1,0 +1,27 @@
+package com.one.learn_spring.examples.c1;
+
+import java.util.Arrays;
+
+import org.springframework.beans.BeansException;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Configuration
+@ComponentScan
+public class BusinessCalculationService{
+
+	public static void main(String[] args) {
+		
+		try (var context = new AnnotationConfigApplicationContext(BusinessCalculationService.class)) {
+			Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+			Arrays.stream(context.getBean(DataService.class).giveData()).forEach(System.out::println);
+		}
+
+	}
+
+}

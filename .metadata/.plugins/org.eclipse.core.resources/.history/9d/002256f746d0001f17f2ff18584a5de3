@@ -1,0 +1,5 @@
+package com.in28Mins.springboot.lean_jpa_and_hibernate.course;
+
+public class Course {
+
+}

@@ -1,0 +1,12 @@
+package com.one.learn_spring;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class HelloWorldConfiguration {
+	
+	public String name() {
+		return "Abhishek";
+	}
+	
+}

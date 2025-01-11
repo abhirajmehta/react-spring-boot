@@ -1,0 +1,2 @@
+spring.application.name=lean-jpa-and-hibernate
+spring.h2.console.enabled=true

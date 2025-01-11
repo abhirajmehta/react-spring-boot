@@ -1,0 +1,24 @@
+package com.in28Mins.springboot.lean_jpa_and_hibernate.course.jpa;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.in28Mins.springboot.lean_jpa_and_hibernate.course.Course;
+
+import jakarta.persistence.EntityManager;
+
+@Repository
+public class CourseJpaRepository {
+
+	@Autowired
+	private EntityManager entityManager;
+	
+	public void insert(Course course) {
+		entityManager.merge(course);
+	}
+//	repository.insert(new Course(1, "Learn AWS", "in28mins"));
+//	repository.insert(new Course(2, "Learn API", "in28mins"));
+//	repository.insert(new Course(3, "Learn Algebra", "in28mins"));
+//	repository.delete(1);
+//	System.out.println(repository.selectById(3));
+}

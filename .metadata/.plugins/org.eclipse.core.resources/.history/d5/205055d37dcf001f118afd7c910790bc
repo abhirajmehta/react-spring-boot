@@ -1,0 +1,9 @@
+package com.springboot.learn_spring_boot;
+
+//http://localhost:8080/courses
+
+//course - ID, name, author.
+
+public class CourseController {
+
+}

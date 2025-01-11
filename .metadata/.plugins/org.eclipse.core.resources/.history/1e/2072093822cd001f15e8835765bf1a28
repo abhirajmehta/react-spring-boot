@@ -1,0 +1,34 @@
+package com.one.learn_spring;
+
+import org.springframework.beans.BeansException;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.one.learn_spring.game.GameRunner;
+import com.one.learn_spring.game.GamingConsole;
+import com.one.learn_spring.game.MarioGame;
+import com.one.learn_spring.game.PacmanGame;
+import com.one.learn_spring.game.SuperContraGame;
+
+@Configuration
+@ComponentScan("")
+public class App03GamingSpringBeans {
+	
+	@Bean
+	public GameRunner gameRunner() {
+		var gameRunner = new GameRunner(game());
+		return gameRunner;
+	}
+
+	public static void main(String[] args) {
+
+		try (var context = new AnnotationConfigApplicationContext(App03GamingSpringBeans.class)) {
+			context.getBean(GamingConsole.class).up();
+			context.getBean(GameRunner.class).run();
+		}
+
+	}
+
+}

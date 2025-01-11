@@ -1,0 +1,8 @@
+package com.in28Mins.springboot.lean_jpa_and_hibernate.course.jpa;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CourseJpaRepository {
+
+}

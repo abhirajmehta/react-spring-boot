@@ -1,0 +1,25 @@
+package com.one.learn_spring;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+record Person(String name, int age) {};
+
+@Configuration
+public class HelloWorldConfiguration {
+	
+	@Bean
+	public String name() {
+		return "Abhishek";
+	}
+	
+	@Bean
+	public int age() {
+		return 24;
+	}
+	
+	public Person person() {
+		return new Person("Ravi", 28);
+	}
+	
+}
