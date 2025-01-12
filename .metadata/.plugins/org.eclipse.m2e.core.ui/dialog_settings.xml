@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/abhishek/Work/lean-jpa-and-hibernate"/>
 			<item value="/home/abhishek/Work/learn-spring-boot"/>
 			<item value="/home/abhishek/Work/learn-maven"/>
 		</list>
